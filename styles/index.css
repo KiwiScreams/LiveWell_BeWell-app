@@ -1,0 +1,58 @@
+/* INDEX CSS */
+:root
+{
+    /* COLOR */
+    --dark-green-clr: #1e4d2b;
+    --neutral-green-clr: #276e36;
+    --olive-green-clr: #7ec850;
+    --light-green-clr: #91dc8a;
+    --pale-green-clr: #c2f0c2;
+}
+/* main start */
+.parallax
+{
+    position: relative;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #91dc8a;
+    overflow: hidden;
+}
+.parallax #parallax-text
+{
+    font-size: 100px;
+    color: white;
+    margin: 0 auto;
+    position: absolute;
+    left: 40%;
+    text-shadow: 0 0 10px black;
+}
+.parallax img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.parallax #img-1
+{
+    height: 100vh;
+}
+.parallax #img-2
+{
+    height: 200vh;
+}
+.parallax #img-3,
+.parallax #img-4 
+{
+    height: 100vh;
+    margin-top: 50px;
+}
+.parallax svg
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/* main end */
