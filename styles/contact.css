@@ -1,0 +1,147 @@
+/* INDEX CSS */
+:root
+{
+    /* COLOR */
+    --dark-green-clr: #1e4d2b;
+    --neutral-green-clr: #276e36;
+    --olive-green-clr: #7ec850;
+    --light-green-clr: #91dc8a;
+    --pale-green-clr: #c2f0c2;
+}
+/* main start */
+.login {
+    background-color: #fff;
+    width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    margin-bottom: 0;
+    border-radius: 20px;
+    text-align: center;
+}
+h2
+{
+    color: #7ec850;
+    font-size: 32px;
+}
+.login input , .login input[type='password']#mainpass{
+    width: 100%;
+    padding: 12px;
+    outline: none;
+    border-radius: 12px;
+    border: none;
+}
+
+
+.login input[type='submit'] {
+    background-color: #7ec850;
+    color: #ffffff;
+}
+
+.login input[type='submit']:hover {
+    background-color: #7ec850;
+    cursor: pointer;
+}
+
+.login input[type='password']{
+    width: 88%;
+}
+.login input[type='email'], .login input[type='password']#mainpass{
+    border: 1px solid #cdcdcd;
+    margin: 20px 0 20px 0;
+
+}
+.login input[type='password']#mainpass{
+    margin-top: 0;
+}
+.password {
+    position: relative;
+}
+
+.forgotpass {
+    margin-top: 20px;
+}
+
+.password {
+
+    width: 22px;
+    height: 22px;
+   
+    
+}
+
+.line {
+    width: 40%;
+    height: 1px;
+    background-color: #cdcdcd;
+}
+
+.or {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.social a {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #cdcdcd;
+    margin: 20px 0;
+    border-radius: 12px;
+    position: relative;
+    color: #7ec850;
+}
+
+.facebook a {
+    background-color: #7ec850;
+    color: #ffffff;
+}
+
+.google a {
+    color: #9b9ea4;
+}
+
+.facebook a:hover {
+    background-color: #5d923c;
+    cursor: pointer;
+}
+
+.google a:hover {
+    background-color: #d5d5d5;
+    cursor: pointer;
+}
+
+.facebook a::after {
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-size: 100%;
+    position: absolute;
+    left: 20px;
+    top: 12px;
+}
+
+.google a::after {
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-size: 100%;
+    position: absolute;
+    left: 20px;
+    top: 12px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.charcho {
+    border: 1px solid #cdcdcd;
+    border-radius: 12px;
+    padding-right: 10px;
+}
+/* main end */
