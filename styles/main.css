@@ -16,7 +16,7 @@
 body
 {
     overflow-x: hidden;
-    background-color: #c2f0c2;
+    background: #fff;
 }
 ::-webkit-scrollbar
 {
@@ -27,7 +27,7 @@ body
     border: none;
     outline: none;
     border-radius: 50px;
-    background-color: #7ec850;
+    background-color: var(--olive-green-clr);
 }
 ::-webkit-scrollbar-track
 {
@@ -41,6 +41,11 @@ body
     --olive-green-clr: #7ec850;
     --light-green-clr: #91dc8a;
     --pale-green-clr: #c2f0c2;
+    --background-gradient-clr: linear-gradient(to right, #c2f0c2, white);
+}
+html
+{
+    scroll-behavior: smooth;
 }
 /* header start */
 header
@@ -49,7 +54,6 @@ header
     padding: 6px 50px 6px 100px;
     position: absolute;
     background-color: #ffffff00;
-    /* position: fixed; */
     top: 0;
     left: 0;
     right: 0;
@@ -57,9 +61,9 @@ header
 }
 header img
 {
-    width: 60px;
+    width: 110px;
 }
-header nav ul li a
+header ul li a
 {
     color: var(--olive-green-clr);
     font-size: 22px;
@@ -68,7 +72,7 @@ header nav ul li a
     border-bottom: 3px #00000000 solid;
     border-left: 3px #00000000 solid;
 }
-header nav ul li a:hover
+header ul li a:hover
 {
     border-bottom: 3px solid var(--olive-green-clr);
     border-left: 3px solid var(--olive-green-clr);
@@ -80,7 +84,144 @@ header nav ul li a:hover
     border-radius: 0 60px 0 60px;
     background-color: var(--olive-green-clr);
 }
+.cal-cal
+{
+    transition: 0.2s;
+    border-radius: 60px 0 60px 0;
+    border-bottom: 3px var(--olive-green-clr) solid;
+    border-right: 3px var(--olive-green-clr) solid;
+}
+.main-ul
+{
+    margin: 0 auto;
+}
 /* header end */
+h1
+{
+    font-size: 60px;
+    margin-bottom: 100px;
+}
+#back-to-top 
+{
+    visibility: hidden;
+    position: fixed;
+    cursor: pointer;
+    right: 16px;
+    bottom: 10px;
+    user-select: none;
+    z-index: 11;
+    padding: 6px;
+    border-radius: 50%;
+    transition: 1s;
+    animation: leaf infinite 2s;
+
+}
+
+.fa-arrow-up {
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 0 60px 0 60px;
+    background-color: green;
+    border: 6px solid green;
+}
+@keyframes leaf
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    50%
+    {
+        transform: rotate(20deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+
+
+.item-container
+{
+    width: 1000px;
+    flex-wrap: wrap;
+    padding: 30px 30px 30px 30px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+}
+.item
+{
+    width: 280px;
+    height: 250px;
+    text-align: center;
+    position: relative;
+}
+.item .item-image
+{
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.item .item-image img
+{
+    width: 100%;
+}
+.item span
+{
+    font-size: 18px;
+    color: #383838;
+}
+.item h3
+{
+    font-size: 24px;
+}
+.text-overlay
+{
+    /* position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--olive-green-clr);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+    border-radius: 0 50% 0 50%; */
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 0 50% 0 50%;
+
+}
+.item:hover .text-overlay
+{
+    bottom: 0;
+    height: 100%;
+    border-bottom: 3px solid green;
+    border-left: 3px solid green;
+    border-right: 3px solid green;
+}
+.text
+{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 /* footer start*/
 footer
 {
@@ -153,12 +294,28 @@ footer ul li a
 {
     width: 100%;
 }
-.plant-image-drop-N2 img
-{
-    /* margin-bottom: 50px; */
-}
 svg
 {
     fill: #c2f0c2;
 }
 /* footer end */
+
+
+.motion
+{
+
+    transform: translateX(400%);
+    transition: transform 0.5s ease;
+}
+.motion:nth-of-type(even)
+{
+    transform: translateX(-400%);
+}
+.motion.show
+{
+    transform: translateX(0);
+}
+.show
+{
+    transform: translateX(0);
+}

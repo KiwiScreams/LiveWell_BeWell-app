@@ -1,147 +1,199 @@
-/* INDEX CSS */
-:root
+.container
 {
-    /* COLOR */
-    --dark-green-clr: #1e4d2b;
-    --neutral-green-clr: #276e36;
-    --olive-green-clr: #7ec850;
-    --light-green-clr: #91dc8a;
-    --pale-green-clr: #c2f0c2;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/* main start */
-.login {
+.form
+{
+    width: 100%;
+    max-width: 820px;
+    height: 500px;
     background-color: #fff;
-    width: 400px;
-    margin: 100px auto;
-    padding: 20px;
-    margin-bottom: 0;
-    border-radius: 20px;
-    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
-h2
+.contact-form
 {
-    color: #7ec850;
-    font-size: 32px;
+    background-color: var(--olive-green-clr);
+    position: relative;
 }
-.login input , .login input[type='password']#mainpass{
+.circle
+{
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(135deg, transparent 20%, var(--neutral-green-clr));
+}
+.circle.one
+{
+    width: 130px;
+    height: 130px;
+    top: 130px;
+    right: -40px;
+}
+.circle.two
+{
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    right: 30px;
+}
+.contact-form::before
+{
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-color: var(--olive-green-clr);
+    transform: rotate(45deg);
+    top: 50px;
+    left: -13px;
+}
+form
+{
+    padding: 50px 36px;
+    z-index: 10;
+    overflow: hidden;
+    position: relative;
+}
+.title
+{
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.input-container
+{
+    position: relative;
+    margin: 16px 0;
+}
+.input
+{
     width: 100%;
-    padding: 12px;
     outline: none;
-    border-radius: 12px;
     border: none;
+    border-radius: 60px 0 60px 0;
+    border-bottom: 3px #fff solid;
+    border-right: 3px #fff solid;
+    background: none;
+    padding: 10px 18px;
+    color: #fff;
+    letter-spacing: 0.1px;
+    margin-bottom: 8px;
 }
-
-
-.login input[type='submit'] {
-    background-color: #7ec850;
-    color: #ffffff;
+textarea.input
+{
+    border-radius: 10px 10px 10px 10px;
+    border: solid #fff 3px;
+    min-height: 130px;
+    resize: none;
 }
-
-.login input[type='submit']:hover {
-    background-color: #7ec850;
-    cursor: pointer;
+.input::placeholder
+{
+    color: rgb(194, 255, 194);
 }
-
-.login input[type='password']{
-    width: 88%;
+button
+{
+    border-radius: 60px 0 60px 0;
+    padding: 10px 20px;
+    border-bottom: 3px #fff solid;
+    border-right: 3px #fff solid;
+    margin: 0 auto;
+    width: 100px;
+    position: absolute;
+    left: 66%;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    transition: 0.3s;
 }
-.login input[type='email'], .login input[type='password']#mainpass{
-    border: 1px solid #cdcdcd;
-    margin: 20px 0 20px 0;
-
+button:hover
+{
+    background-color: var(--neutral-green-clr);
+    color: #fff;
+    transition: 0.3s;
 }
-.login input[type='password']#mainpass{
-    margin-top: 0;
+.contact-info
+{
+    background-color: rgb(255, 255, 255);
+    padding: 50px 36px;
 }
-.password {
-    position: relative;
+.contact-info .title
+{
+    color: green;
 }
-
-.forgotpass {
-    margin-top: 20px;
+.short-text
+{
+    margin-bottom: 20px;
 }
-
-.password {
-
-    width: 22px;
-    height: 22px;
-   
-    
-}
-
-.line {
-    width: 40%;
-    height: 1px;
-    background-color: #cdcdcd;
-}
-
-.or {
-    display: flex;
-    justify-content: space-between;
+.information
+{
     align-items: center;
-    margin: 20px 0;
+    margin-bottom: 10px;
 }
-
-.social a {
-    display: block;
-    width: 100%;
-    padding: 12px;
+.information i
+{
+    color: green;
+    margin-right: 10px;
+    font-size: 24px;
+}
+.social-media
+{
+    padding: 32px 0 0 0;
+}
+.social-media h5
+{
+    margin-bottom: 20px;
+}
+.social-media i
+{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, green, #2cd82c);
+    color: #fff;
     text-align: center;
-    border: 1px solid #cdcdcd;
-    margin: 20px 0;
-    border-radius: 12px;
-    position: relative;
-    color: #7ec850;
-}
+    margin-right: 10px;
+    padding: 10px;
+    transition: 0.3s;
 
-.facebook a {
-    background-color: #7ec850;
-    color: #ffffff;
 }
-
-.google a {
-    color: #9b9ea4;
+.social-media a:hover i
+{
+    transform: scale(1.5);
+    transition: 0.3s;
 }
-
-.facebook a:hover {
-    background-color: #5d923c;
-    cursor: pointer;
+@media (max-width: 850px)
+{
+    .form
+    {
+        grid-template-columns: 1fr;
+    }
+    .contact-form::before
+    {
+        top: -13px;
+        left: initial;
+        right: 70px;
+    }
 }
-
-.google a:hover {
-    background-color: #d5d5d5;
-    cursor: pointer;
+@media (max-width: 480px)
+{
+    .container
+    {
+        padding: 24px;
+    }
+    form, .contact-info
+    {
+        padding: 28px 26px;
+    }
 }
-
-.facebook a::after {
-    content: "";
-    width: 22px;
-    height: 22px;
-    background-size: 100%;
-    position: absolute;
-    left: 20px;
-    top: 12px;
-}
-
-.google a::after {
-    content: "";
-    width: 22px;
-    height: 22px;
-    background-size: 100%;
-    position: absolute;
-    left: 20px;
-    top: 12px;
-}
-
-.flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.charcho {
-    border: 1px solid #cdcdcd;
-    border-radius: 12px;
-    padding-right: 10px;
-}
-/* main end */

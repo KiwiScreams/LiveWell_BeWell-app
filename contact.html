@@ -11,105 +11,71 @@
 
 <body>
     <header class="flex">
-        <a href="index.html"><img src="assets/images/logo-life.png" alt="logo"></a>
-        <nav>
+        <a href="index.html"><img src="assets/images/logo-be-well.svg" alt="logo"></a>
+        <nav class="flex">
             <ul class="flex">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="task.html">Everyday Task</a></li>
                 <li><a href="#">Service</a></li>
-                <li><a href="contact.html" class="active-a">Contact</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="#" class="active-a">Contact</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
             </ul>
         </nav>
+        <ul>
+            <li><a href="calorieCalculator.html" class="cal-cal">Calorie Calculator</a></li>
+        </ul>
     </header>
     <main>
-        <form class="login" method="post" action="#">
-            <h2>Sing Up</h2>
-            <input type="email" name="elfosta" id="email" placeholder="email">
-            <input type="password" name="mainpass" id="mainpass" placeholder="password" minlength="8" maxlength="12">
-            <div class="flex charcho">
-                <input type="password" name="password" id="password" placeholder="password" minlength="8"
-                    maxlength="12">
-                <div class="password" id="parolidiv">
-                    <i class="fa-regular fa-eye-slash"></i>
+        <div class="container">
+            <div class="form">
+                <div class="contact-info">
+                    <h3 class="title">Find us here</h3>
+                    <p class="short-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic maiores quis
+                        quod ratione
+                        distinctio, repellendus aliquam officiis, eum vel eos dolores consectetur corporis veritatis
+                        unde dolore iure tempore pariatur soluta.</p>
+                    <div class="info">
+                        <div class="information">
+                            <p><i class="fa-solid fa-location-dot"></i>third planet from the sun, the building is
+                                large, easy to find</p>
+                        </div>
+                        <div class="information">
+                            <p><i class="fa-solid fa-envelope"></i>WELL@gmail.com</p>
+                        </div>
+                        <div class="information">
+                            <p><i class="fa-solid fa-phone"></i>+995 558 31 97 37</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h5>Connect with us:</h5>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
                 </div>
-            </div>
-            <p class="forgotpass">
-                alredy have an accaunt? &ensp;
-                <a href="index.html">log in</a>
-            </p>
-            <br>
-            <p class="submit social">
-                <a href="#">sing up</a>
-            </p>
-            <div class="or">
-                <div class="line"></div>
-                <p>or</p>
-                <div class="line"></div>
-            </div>
-            <p class="facebook social">
-                <a href="#">
-                    <i class="fa-brands fa-facebook"></i>
-                    &ensp;Login width facebook</a>
-            </p>
-            <p class="google social">
-                <a href="#">
-                    <i class="fa-brands fa-google"></i>
-                    &ensp;&ensp;Login width Google</a>
-            </p>
-        </form>
-    </main>
-    <footer>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#c2f0c2" fill-opacity="1"
-                d="M0,256L80,261.3C160,267,320,277,480,272C640,267,800,245,960,213.3C1120,181,1280,139,1360,117.3L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
-            </path>
-        </svg>
-
-        <div class="footer-container">
-            <div class="footer-info">
-                <ul>
-                    <li class="h3-size">Contact</li>
-                    <li>Tbilisi, Pekini st. No. 43</li>
-                    <li>+995 558 19 55</li>
-                    <li>Tbilisi, Kostava st. No. 28</li>
-                    <li>+995 258 58 54</li>
-                    <li>BeWell@gmail.com</li>
-                </ul>
-                <ul>
-                    <li class="h3-size">Company</li>
-                    <li>About us</li>
-                    <li>Vacancy</li>
-                    <li>Branches</li>
-                </ul>
-                <ul>
-                    <li class="h3-size">Production</li>
-                    <li>Drinks</li>
-                    <li>Protein</li>
-                </ul>
-                <ul>
-                    <li class="h3-size">Help</li>
-                    <li>Instruction</li>
-                    <li>Help Center</li>
-                    <li>Problem with the site?</li>
-                </ul>
-            </div>
-            <div class="flex footer-bottom">
-                <p>Terms and Conditions</p>
-                <p>license</p>
-                <p>Privacy Policy</p>
-                <p>2024© All rights reserved</p>
-                <p>Created by SLM</p>
-                <div class="plant-image-drop-N2">
-                    <a href="https://www.tbceducation.ge/" target="_blank">
-                        <img src="assets/images/tbc-logo.png" alt="TBC">
-                    </a>
+                <div class="contact-form">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
+                    <form>
+                        <h3 class="title">Contact Us</h3>
+                        <div class="input-container">
+                            <input type="text" name="name" id="name" class="input" placeholder="Example: John Doe">
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="email" id="email" class="input"
+                                placeholder="Example: JohnDoe@gmail.com">
+                        </div>
+                        <div class="input-container">
+                            <input type="tel" name="phone" id="phone" class="input"
+                                placeholder="Example: +995 56 75 76">
+                        </div>
+                        <div class="input-container textarea">
+                            <textarea name="message" class="input" placeholder="Enter your comment..."></textarea>
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
                 </div>
-            </div>
-            <div class="plant-image-drop">
-                <img src="https://static.vecteezy.com/system/resources/previews/010/262/695/non_2x/variegated-grass-pandanus-plant-in-white-round-contemporary-pot-container-isolated-on-transparent-background-for-garden-design-usage-free-png.png"
-                    alt="plant">
             </div>
         </div>
-    </footer>
+    </main>
     <script src="https://kit.fontawesome.com/f3bc6e5cae.js" crossorigin="anonymous"></script>

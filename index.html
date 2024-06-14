@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/index.css">
     <title>Live Well, Be Well</title>
 </head>
+
 <body>
     <header class="flex">
-        <a href="index.html"><img src="assets/images/logo-life.png" alt="logo"></a>
-        <nav>
-            <ul class="flex">
+        <a href="index.html"><img src="assets/images/logo-be-well.svg" alt="logo"></a>
+        <nav class="flex">
+            <ul class="flex main-ul">
                 <li><a href="#" class="active-a">Home</a></li>
                 <li><a href="task.html">Everyday Task</a></li>
                 <li><a href="#">Service</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
             </ul>
         </nav>
+        <ul>
+            <li><a href="calorieCalculator.html" class="cal-cal">Calorie Calculator</a></li>
+        </ul>
     </header>
     <main>
         <section class="parallax flex">
@@ -28,15 +32,154 @@
             <img src="assets/images/green.webp" id="img-3">
             <img src="assets/images/green.webp" id="img-4">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#c2f0c2" fill-opacity="1"
+                <path fill="#fff" fill-opacity="1"
                     d="M0,96L120,133.3C240,171,480,245,720,256C960,267,1200,213,1320,186.7L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
                 </path>
             </svg>
         </section>
+
+        <div class="text-container flex motion">
+            <div class="text-container-box">
+                <h2>Good health starts with what you eat</h2>
+                <p>Want to eat more mindfully? Track your meals, learn about your habits, and reach your goals with
+                    MyFitnessPal.</p>
+                <button onclick="location.href='task.html'">START&ensp;<i class="fa-solid fa-play"></i></button>
+            </div>
+            <div class="image-container">
+                <img src="assets/images/tbc-logo.png" alt="food">
+            </div>
+        </div>
+        <div class="text-container flex motion">
+            <div class="image-container">
+                <img src="assets/images/tbc-logo.png" alt="food">
+            </div>
+            <div class="text-container-box">
+                <h2>A magazine of over 14 million dishes.</h2>
+                <p>See a breakdown of calories and nutrients, compare serving sizes, and learn how the food you eat
+                    supports your goals.</p>
+            </div>
+        </div>
+        <div class="item-container">
+            <h1>Tools for your purposes</h1>
+            <div class="item-content flex">
+                <div class="item">
+                    <div class="item-image">
+                        <img src="assets/images/logo-life.png" alt="study">
+                    </div>
+                    <h3>Study<span>&</span>Improve</h3>
+                    <div class="text-overlay">
+                        <p class="text">Keeping a food diary will help you
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image">
+                        <img src="assets/images/logo-life.png" alt="Nutrition">
+                    </div>
+                    <h3>Stay motivated</h3>
+                    <div class="text-overlay">
+                        <p class="text">Join the world's largest community for advice, advice and support 24/7.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image">
+                        <img src="assets/images/logo-life.png" alt="Nutrition">
+                    </div>
+                    <h3>Goal is near</h3>
+                    <div class="text-overlay">
+                        <p class="text">Don't forget about your goal, victory is just around the corner.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slideshow-container" id="slideshow-container">
+
+            <div class="mySlides flex">
+                <div class="image-slider">
+                    <img src="assets/images/dexcom.png" style="width:100%" class="slider-image">
+                </div>
+                <div class="text-slider">
+                    <h2>Dexcom</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nisi sed possimus molestias tempora
+                        esse consequatur, error temporibus dolor nulla odio doloremque, blanditiis, voluptatum ullam
+                        cumque voluptas est! Reprehenderit, ullam.</p>
+                    <button
+                        onclick="location.href='//play-google-com.translate.goog/store/apps/details?id=com.dexcom.g6&hl=en_US&_x_tr_sl=en&_x_tr_tl=ru&_x_tr_hl=ru&_x_tr_pto=sc'">Download
+                        now!</button>
+                </div>
+            </div>
+
+            <div class="mySlides flex">
+                <div class="image-slider">
+                    <img src="assets/images/fitbit.png" style="width:100%" class="slider-image">
+                </div>
+                <div class="text-slider">
+                    <h2>Fitbit</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nisi sed possimus molestias tempora
+                        esse consequatur, error temporibus dolor nulla odio doloremque, blanditiis, voluptatum ullam
+                        cumque voluptas est! Reprehenderit, ullam.</p>
+                    <button
+                        onclick="location.href='//play.google.com/store/apps/details?id=com.fitbit.FitbitMobile&hl=en_US&pli=1'">Download
+                        now!</button>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="image-slider">
+                    <img src="assets/images/myfitnessapp.png" style="width:100%" class="slider-image">
+                </div>
+                <div class="text-slider">
+                    <h2>myfitnesspal</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nisi sed possimus molestias tempora
+                        esse consequatur, error temporibus dolor nulla odio doloremque, blanditiis, voluptatum ullam
+                        cumque voluptas est! Reprehenderit, ullam.</p>
+                    <button
+                        onclick="location.href='//play.google.com/store/apps/details?id=com.myfitnesspal.android&hl=ru'">Download
+                        now!</button>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="image-slider">
+                    <img src="assets/images/peloton.png" style="width:100%" class="slider-image">
+                </div>
+                <div class="text-slider">
+                    <h2>Peloton</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nisi sed possimus molestias tempora
+                        esse consequatur, error temporibus dolor nulla odio doloremque, blanditiis, voluptatum ullam
+                        cumque voluptas est! Reprehenderit, ullam.</p>
+                    <button
+                        onclick="location.href='//play.google.com/store/apps/details?id=com.onepeloton.callisto&hl=en_US'">Download
+                        now!</button>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="image-slider">
+                    <img src="assets/images/lifesum.png" style="width:100%" class="slider-image">
+                </div>
+                <div class="text-slider">
+                    <h2>Lifesum</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nisi sed possimus molestias tempora
+                        esse consequatur, error temporibus dolor nulla odio doloremque, blanditiis, voluptatum ullam
+                        cumque voluptas est! Reprehenderit, ullam.</p>
+                    <button
+                        onclick="location.href='//play.google.com/store/apps/details?id=com.sillens.shapeupclub&hl=ru'">Download
+                        now!</button>
+                </div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
     </main>
+    <span id="back-to-top">
+        <span class="arrow-up"><i class="fa-solid fa-arrow-up"></i></span>
+    </span>
     <footer>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#c2f0c2" fill-opacity="1"
+            <path fill="#fff" fill-opacity="1"
                 d="M0,256L80,261.3C160,267,320,277,480,272C640,267,800,245,960,213.3C1120,181,1280,139,1360,117.3L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
             </path>
         </svg>
@@ -76,7 +219,7 @@
                 <p>Created by SLM</p>
                 <div class="plant-image-drop-N2">
                     <a href="https://www.tbceducation.ge/" target="_blank">
-                    <img src="assets/images/tbc-logo.png" alt="TBC">
+                        <img src="assets/images/tbc-logo.png" alt="TBC">
                     </a>
                 </div>
             </div>
@@ -87,6 +230,10 @@
         </div>
     </footer>
     <script src="js/parallax.js"></script>
+    <script src="js/content.js"></script>
+    <script src="js/top.js"></script>
+    <script src="js/slider.js"></script>
     <script src="https://kit.fontawesome.com/f3bc6e5cae.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

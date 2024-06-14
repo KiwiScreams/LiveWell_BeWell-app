@@ -1,0 +1,91 @@
+.calorie-calculator
+{
+    margin-top: 140px;
+}
+h1
+{
+    text-align: center;
+}
+.container
+{
+    width: 100%;
+    max-width: 1000px;
+}
+h1,
+.container,
+.output
+{
+    margin: 20px auto;
+}
+label,
+legend
+{
+    font-weight: bold;
+}
+.input-container
+{
+    display: flex;
+    flex-direction: column;
+}
+legend
+{
+    font-size: 30px;
+}
+fieldset
+{
+    padding: 20px;
+    background-color: lightgreen;
+}
+button,
+input,
+select
+{
+    min-height: 30px;
+    padding: 10px 20px;
+    font-size: 28px;
+    border-radius: 50px;
+}
+button
+{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: lightgreen;
+    border: 2px solid green;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 0 60px 0 60px;
+}
+button:hover
+{
+    opacity: 0.8;
+}
+fieldset,
+label,
+button,
+input,
+select
+{
+    margin-bottom: 10px;
+}
+.output
+{
+    padding: 10px;
+    text-align: center;
+}
+.hide
+{
+    display: none;
+}
+.output span
+{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.surplus
+{
+    color: pink;
+}
+.deficit
+{
+    color: lightgreen;
+}
