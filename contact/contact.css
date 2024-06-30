@@ -1,10 +1,3 @@
-/* body
-{
-    background: url(../assets/images/rame.jpg);
-    width: 100%;
-    background-size: 100%;
-    background-position: center;
-} */
 .container {
     position: relative;
     width: 100%;
@@ -184,17 +177,6 @@ button:hover {
     .container {
         padding: 0;
     }
-
-    /* .form
-    {
-        grid-template-columns: 1fr;
-    }
-    .contact-form::before
-    {
-        top: -13px;
-        left: initial;
-        right: 70px;
-    } */
 }
 
 @media (max-width: 600px) {

@@ -1,0 +1,13 @@
+.see-more a {
+    color: green;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.see-more a:hover {
+    color: greenyellow;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}

@@ -1,8 +1,8 @@
-/* INDEX CSS */
-/* main start */
 .parallax {
   position: relative;
   height: 100vh;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   text-align: center;
   width: 100%;
@@ -64,7 +64,6 @@
 
 .text-container .image-container img {
   width: 100%;
-  /* height: 100%; */
 }
 
 .text-container .text-container-box h2 {
@@ -81,6 +80,8 @@
 
 .text-container .text-container-box button {
   width: 80%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   font-size: 40px;
   padding: 10px 30px;
@@ -94,18 +95,19 @@
 }
 
 .text-container .text-container-box button:hover {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   border-radius: 0 60px 0 60px;
 }
 
-/* // */
 .slideshow-container {
   width: 80%;
   position: relative;
   margin: auto;
   height: 550px;
   margin-top: 100px;
-  /* background-color: rgb(174, 250, 174); */
+  background-image: -o-radial-gradient(transparent, rgb(187, 255, 187));
   background-image: radial-gradient(transparent, rgb(187, 255, 187));
   padding: 40px 20px;
   margin-bottom: 10px;
@@ -129,8 +131,13 @@
   color: green;
   font-weight: bold;
   font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -176,15 +183,20 @@ button {
   border-radius: 60px 0 60px 0;
   border-bottom: 3px var(--olive-green-clr) solid;
   border-right: 3px var(--olive-green-clr) solid;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
 button:hover {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   border-radius: 0 60px 0 60px;
 }
 
 .only {
+  -webkit-box-shadow: 0 0 40px 40px #000000b0;
   box-shadow: 0 0 40px 40px #000000b0;
   background-color: #000000ac;
 }
@@ -198,6 +210,9 @@ button:hover {
 @media only screen and (max-width: 1000px) {
   .text-container {
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
   }
@@ -217,6 +232,9 @@ button:hover {
   }
 
   .another {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
 
@@ -240,25 +258,26 @@ button:hover {
     background-color: #ffffff;
   }
 }
-  @media screen and (max-width:520px) {
-    .text-slider {
-      font-size: 18px;
-      padding: 10px 0px;
-      width: 100%;
-    }
-    
-    .slideshow-container {
-      width: 90%;
-      height: 424px;
-      margin-top: 100px;
-      padding: 14px 6px;
-    }
+
+@media screen and (max-width:520px) {
+  .text-slider {
+    font-size: 18px;
+    padding: 10px 0px;
+    width: 100%;
   }
 
-  @media screen and (max-width: 500px) {
-    .parallax #parallax-text {
-      font-size: 40px;
-      top: 20%;
-    }
-
+  .slideshow-container {
+    width: 90%;
+    height: 424px;
+    margin-top: 100px;
+    padding: 14px 6px;
   }
+}
+
+@media screen and (max-width: 500px) {
+  .parallax #parallax-text {
+    font-size: 40px;
+    top: 20%;
+  }
+
+}

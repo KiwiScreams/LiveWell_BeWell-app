@@ -1,32 +1,35 @@
-.service-container
-{
+.service-container {
     width: 80%;
     margin: 0 auto;
     margin-top: 100px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
-.service-container .service-box
-{
+
+.service-container .service-box {
     width: 46%;
     margin: 80px 10px 10px 10px;
 }
-.service-container .service-box i
-{
+
+.service-container .service-box i {
     font-size: 40px;
     text-align: center;
     display: block;
     color: green;
     margin-bottom: 20px;
 }
-.service-container h2, .free-courses h2
-{
+
+.service-container h2,
+.free-courses h2 {
     text-align: center;
     color: green;
     margin-bottom: 20px;
 }
-.service-container .service-box button
-{
+
+.service-container .service-box button {
     width: 50%;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     font-size: 20px;
     padding: 10px 30px;
@@ -40,21 +43,22 @@
     border-bottom: 5px var(--olive-green-clr) solid;
     border-right: 5px var(--olive-green-clr) solid;
 }
-.service-container .service-box button:hover
-{
+
+.service-container .service-box button:hover {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     border-radius: 0 60px 0 60px;
 }
-@media only screen and (max-width: 700px)
-{
-    .service-container
-    {
+
+@media only screen and (max-width: 700px) {
+    .service-container {
         width: 100%;
         padding: 20px;
         margin-top: 40px;
     }
-    .service-container .service-box
-    {
+
+    .service-container .service-box {
         width: 90%;
         margin: 0 auto;
     }
