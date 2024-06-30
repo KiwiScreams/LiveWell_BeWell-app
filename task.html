@@ -11,74 +11,62 @@
 
 <body>
     <header class="flex">
-        <a href="index.html"><img src="assets/images/logo-be-well.svg" alt="logo"></a>
+        <a href="index.html"><img src="assets/images/logo-live-well-be-well-green-color.svg" alt="logo"></a>
+        <span id="btn">
+            <i class="fa-solid fa-bars"></i>
+        </span>
         <nav class="flex">
-            <ul class="flex">
+            <ul class="flex" id="navigation">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#" class="active-a">Everyday Task</a></li>
-                <li><a href="#">Service</a></li>
+                <li><a href="#" class="active-a">News</a></li>
+                <li><a href="service.html">Service</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li><li><a href="calorieCalculator.html" class="cal-cal">Calorie Calculator</a></li>
             </ul>
         </nav>
-        <ul>
-            <li><a href="calorieCalculator.html" class="cal-cal">Calorie Calculator</a></li>
-        </ul>
     </header>
     <main>
-        <div class="item-container flex">
-            <div class="item">
-                <div class="item-image">
-                    <img src="assets/images/logo-life.png" alt="Nutrition">
+        <div class="item-container see-more">
+            <h1>Stories, Tips & Latest news</h1>
+            <div class="item-content flex">
+                <div class="item">
+                    <div class="item-image">
+                        <img src="assets/images/calculator.png" alt="Calorie Counter">
+                    </div>
+                    <h3>Calorie Counter</h3>
+                    <div class="text-overlay">
+                        <p class="text">Start to count your calories with "calorie counter" today and get...
+                        <br>
+                        <br>
+                        <a href="#">see more</a>
+                        </p>
+                    </div>
                 </div>
-                <h3>Nutrition</h3>
-                <div class="text-overlay">
-                    <p class="text">the process of taking in food and converting it into energy and other vital
-                        nutrients required for life
-                    </p>
+                <div class="item">
+                    <div class="item-image">
+                        <img src="assets/images/fitness.png" alt="study">
+                    </div>
+                    <h3>Free Subscription</h3>
+                    <div class="text-overlay">
+                        <p class="text">Signup and get free one month subscription...
+                        <br>
+                        <br>
+                        <a href="#">see more</a>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <div class="item-image">
-                    <img src="assets/images/logo-life.png" alt="Nutrition">
-                </div>
-                <h3>Sleep</h3>
-                <div class="text-overlay">
-                    <p class="text">During sleep, your body is working to support healthy brain function and maintain
-                        your physical health.
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-image">
-                    <img src="assets/images/logo-life.png" alt="Nutrition">
-                </div>
-                <h3>Mental Health</h3>
-                <div class="text-overlay">
-                    <p class="text">Mental health includes our emotional, psychological, and social well-being.
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-image">
-                    <img src="assets/images/logo-life.png" alt="Nutrition">
-                </div>
-                <h3>Fitness</h3>
-                <div class="text-overlay">
-                    <p class="text">Physical activity or exercise can improve your health and reduce the risk of
-                        developing several diseases.
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-image">
-                    <img src="assets/images/logo-life.png" alt="Nutrition">
-                </div>
-                <h3>Vitamins</h3>
-                <div class="text-overlay">
-                    <p class="text">helping to fight infection, wound healing, making our bones strong and regulating
-                        hormones.
-                    </p>
+                <div class="item">
+                    <div class="item-image">
+                        <img src="assets/images/onlaincourses.png" alt="Online Course">
+                    </div>
+                    <h3>Online Course</h3>
+                    <div class="text-overlay">
+                        <p class="text">Signup and get online conversation with a trainer...
+                        <br>
+                        <br>
+                        <a href="#">see more</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -89,16 +77,14 @@
                 d="M0,256L80,261.3C160,267,320,277,480,272C640,267,800,245,960,213.3C1120,181,1280,139,1360,117.3L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
             </path>
         </svg>
-
         <div class="footer-container">
             <div class="footer-info">
                 <ul>
                     <li class="h3-size">Contact</li>
-                    <li>Tbilisi, Pekini st. No. 43</li>
-                    <li>+995 558 19 55</li>
-                    <li>Tbilisi, Kostava st. No. 28</li>
-                    <li>+995 258 58 54</li>
-                    <li>BeWell@gmail.com</li>
+                    <li>Tbilisi, Georgia</li>
+                    <li><i class="fa-solid fa-phone"></i>&ensp;+995 558 19 55</li>
+                    <li><i class="fa-solid fa-phone"></i>&ensp;+995 258 58 54</li>
+                    <li><i class="fa-solid fa-envelope"></i>&ensp;BeWell@gmail.com</li>
                 </ul>
                 <ul>
                     <li class="h3-size">Company</li>
@@ -107,33 +93,27 @@
                     <li>Branches</li>
                 </ul>
                 <ul>
-                    <li class="h3-size">Production</li>
-                    <li>Drinks</li>
-                    <li>Protein</li>
-                </ul>
-                <ul>
                     <li class="h3-size">Help</li>
                     <li>Instruction</li>
                     <li>Help Center</li>
                     <li>Problem with the site?</li>
                 </ul>
-            </div>
-            <div class="flex footer-bottom">
-                <p>Terms and Conditions</p>
-                <p>license</p>
-                <p>Privacy Policy</p>
-                <p>2024© All rights reserved</p>
-                <p>Created by SLM</p>
                 <div class="plant-image-drop-N2">
                     <a href="https://www.tbceducation.ge/" target="_blank">
                         <img src="assets/images/tbc-logo.png" alt="TBC">
                     </a>
                 </div>
             </div>
+            <div class="flex footer-bottom">
+                <p>Terms and Conditions</p>
+                <p>Privacy Policy</p>
+                <p>2024© All rights reserved</p>
+                <p>Created by SLM</p>
+            </div>
             <div class="plant-image-drop">
-                <img src="https://static.vecteezy.com/system/resources/previews/010/262/695/non_2x/variegated-grass-pandanus-plant-in-white-round-contemporary-pot-container-isolated-on-transparent-background-for-garden-design-usage-free-png.png"
-                    alt="plant">
+                <img src="assets/images/fotar.png" alt="plant">
             </div>
         </div>
     </footer>
+    <script src="js/navigation.js"></script>
     <script src="https://kit.fontawesome.com/f3bc6e5cae.js" crossorigin="anonymous"></script>

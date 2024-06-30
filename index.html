@@ -9,28 +9,30 @@
 </head>
 
 <body>
-    <header class="flex">
-        <a href="index.html"><img src="assets/images/logo-be-well.svg" alt="logo"></a>
+    <header class="flex only">
+        <a href="index.html"><img src="assets/images/logo-live-well-be-well-green-color.svg" alt="logo"></a>
+        <span id="btn">
+            <i class="fa-solid fa-bars"></i>
+        </span>
         <nav class="flex">
-            <ul class="flex main-ul">
+            <ul class="flex main-ul" id="navigation">
                 <li><a href="#" class="active-a">Home</a></li>
-                <li><a href="task.html">Everyday Task</a></li>
-                <li><a href="#">Service</a></li>
+                <li><a href="task.html">News</a></li>
+                <li><a href="service.html">Service</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="calorieCalculator.html" class="cal-cal">Calorie Calculator</a></li>
             </ul>
         </nav>
-        <ul>
-            <li><a href="calorieCalculator.html" class="cal-cal">Calorie Calculator</a></li>
-        </ul>
+        
     </header>
     <main>
         <section class="parallax flex">
-            <img src="assets/images/freepik-export-20240530213521X9yy.jpeg" id="img-1">
+            <img src="assets/images/4f.png" id="img-1">
             <h2 id="parallax-text">Live Well<br>Be Well</h2>
-            <img src="assets/images/greebbackinfront.png" id="img-2">
-            <img src="assets/images/green.webp" id="img-3">
-            <img src="assets/images/green.webp" id="img-4">
+            <img src="assets/images/3f.png" id="img-2">
+            <img src="assets/images/2f.png" id="img-3">
+            <img src="assets/images/1f.png" id="img-4">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#fff" fill-opacity="1"
                     d="M0,96L120,133.3C240,171,480,245,720,256C960,267,1200,213,1320,186.7L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
@@ -40,31 +42,31 @@
 
         <div class="text-container flex motion">
             <div class="text-container-box">
-                <h2>Good health starts with what you eat</h2>
+                <h1>Good health starts with what you eat</h1>
                 <p>Want to eat more mindfully? Track your meals, learn about your habits, and reach your goals with
                     MyFitnessPal.</p>
-                <button onclick="location.href='task.html'">START&ensp;<i class="fa-solid fa-play"></i></button>
+                <button onclick="location.href='service.html'">START</button>
             </div>
             <div class="image-container">
-                <img src="assets/images/tbc-logo.png" alt="food">
+                <img src="assets/images/fff.png" alt="food">
             </div>
         </div>
-        <div class="text-container flex motion">
+        <div class="text-container flex motion another">
             <div class="image-container">
-                <img src="assets/images/tbc-logo.png" alt="food">
+                <img src="assets/images/fffff.png" alt="food">
             </div>
             <div class="text-container-box">
-                <h2>A magazine of over 14 million dishes.</h2>
+                <h1>A magazine of over 14 million dishes.</h1>
                 <p>See a breakdown of calories and nutrients, compare serving sizes, and learn how the food you eat
                     supports your goals.</p>
             </div>
         </div>
         <div class="item-container">
-            <h1>Tools for your purposes</h1>
+            <h1 class="text-center">Tools for your purposes</h1>
             <div class="item-content flex">
                 <div class="item">
                     <div class="item-image">
-                        <img src="assets/images/logo-life.png" alt="study">
+                        <img src="assets/images/woman.png" alt="study">
                     </div>
                     <h3>Study<span>&</span>Improve</h3>
                     <div class="text-overlay">
@@ -74,7 +76,7 @@
                 </div>
                 <div class="item">
                     <div class="item-image">
-                        <img src="assets/images/logo-life.png" alt="Nutrition">
+                        <img src="assets/images/mountain.png" alt="Nutrition">
                     </div>
                     <h3>Stay motivated</h3>
                     <div class="text-overlay">
@@ -84,7 +86,7 @@
                 </div>
                 <div class="item">
                     <div class="item-image">
-                        <img src="assets/images/logo-life.png" alt="Nutrition">
+                        <img src="assets/images/goal.png" alt="Nutrition">
                     </div>
                     <h3>Goal is near</h3>
                     <div class="text-overlay">
@@ -95,31 +97,25 @@
             </div>
         </div>
         <div class="slideshow-container" id="slideshow-container">
-
             <div class="mySlides flex">
                 <div class="image-slider">
                     <img src="assets/images/dexcom.png" style="width:100%" class="slider-image">
                 </div>
                 <div class="text-slider">
                     <h2>Dexcom</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nisi sed possimus molestias tempora
-                        esse consequatur, error temporibus dolor nulla odio doloremque, blanditiis, voluptatum ullam
-                        cumque voluptas est! Reprehenderit, ullam.</p>
+                    <p>Always know your glucose and where it's headed with the Dexcom G6 Continuous Glucose Monitoring (CGM) system, approved for diabetes treatment decisions with zero samples* and no calibration.</p>
                     <button
                         onclick="location.href='//play-google-com.translate.goog/store/apps/details?id=com.dexcom.g6&hl=en_US&_x_tr_sl=en&_x_tr_tl=ru&_x_tr_hl=ru&_x_tr_pto=sc'">Download
                         now!</button>
                 </div>
             </div>
-
             <div class="mySlides flex">
                 <div class="image-slider">
                     <img src="assets/images/fitbit.png" style="width:100%" class="slider-image">
                 </div>
                 <div class="text-slider">
                     <h2>Fitbit</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nisi sed possimus molestias tempora
-                        esse consequatur, error temporibus dolor nulla odio doloremque, blanditiis, voluptatum ullam
-                        cumque voluptas est! Reprehenderit, ullam.</p>
+                    <p>Fitbit is part of Google. Together we will make the features that help you live a healthy lifestyle available to more people.</p>
                     <button
                         onclick="location.href='//play.google.com/store/apps/details?id=com.fitbit.FitbitMobile&hl=en_US&pli=1'">Download
                         now!</button>
@@ -131,9 +127,7 @@
                 </div>
                 <div class="text-slider">
                     <h2>myfitnesspal</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nisi sed possimus molestias tempora
-                        esse consequatur, error temporibus dolor nulla odio doloremque, blanditiis, voluptatum ullam
-                        cumque voluptas est! Reprehenderit, ullam.</p>
+                    <p>Track your nutrition, physical activity, and water intake in MyFitnessPal. This is a universal application in which you can count calories, intermittent fasting tracker, plan your diet, keep a food diary and monitor your weight.</p>
                     <button
                         onclick="location.href='//play.google.com/store/apps/details?id=com.myfitnesspal.android&hl=ru'">Download
                         now!</button>
@@ -145,9 +139,7 @@
                 </div>
                 <div class="text-slider">
                     <h2>Peloton</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nisi sed possimus molestias tempora
-                        esse consequatur, error temporibus dolor nulla odio doloremque, blanditiis, voluptatum ullam
-                        cumque voluptas est! Reprehenderit, ullam.</p>
+                    <p>Kickstart your fitness journey with the Peloton App. Enjoy strength training, meditation, yoga, Pilates, and easy-start ab workouts. Experience energetic classes on any bike, treadmill, or rowing machine. No equipment? No worries.</p>
                     <button
                         onclick="location.href='//play.google.com/store/apps/details?id=com.onepeloton.callisto&hl=en_US'">Download
                         now!</button>
@@ -159,9 +151,8 @@
                 </div>
                 <div class="text-slider">
                     <h2>Lifesum</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nisi sed possimus molestias tempora
-                        esse consequatur, error temporibus dolor nulla odio doloremque, blanditiis, voluptatum ullam
-                        cumque voluptas est! Reprehenderit, ullam.</p>
+                    <p>Personalized healthy eating recommendations are always at your fingertips.
+                        Lifesum is more than just a calorie counter: we help you tailor diets to suit your tastes and lifestyle. Achieve your goals and adopt healthy eating habits.</p>
                     <button
                         onclick="location.href='//play.google.com/store/apps/details?id=com.sillens.shapeupclub&hl=ru'">Download
                         now!</button>
@@ -173,6 +164,52 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <br>
+        <h1 class="text-center">Keep healthy lifestyle with</h1>
+        <div class="item-container flex container-big">
+            <div class="item">
+                <div class="item-image">
+                    <img src="assets/images/nutrition.png" alt="Nutrition">
+                </div>
+                <h3>Nutrition</h3>
+                <div class="text-overlay">
+                    <p class="text">the process of taking in food and converting it into energy and other vital
+                        nutrients required for life
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="assets/images/sleep.png" alt="Nutrition">
+                </div>
+                <h3>Sleep</h3>
+                <div class="text-overlay">
+                    <p class="text">During sleep, your body is working to support healthy brain function and maintain
+                        your physical health.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="assets/images/mental-health.png" alt="Nutrition">
+                </div>
+                <h3>Mental Health</h3>
+                <div class="text-overlay">
+                    <p class="text">Mental health includes our emotional, psychological, and social well-being.
+                    </p>
+                </div>
+            </div>
+            <div class="item auto">
+                <div class="item-image">
+                    <img src="assets/images/fitnesss.png" alt="Nutrition">
+                </div>
+                <h3>Fitness</h3>
+                <div class="text-overlay">
+                    <p class="text">Physical activity or exercise can improve your health and reduce the risk of
+                        developing several diseases.
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
     <span id="back-to-top">
         <span class="arrow-up"><i class="fa-solid fa-arrow-up"></i></span>
@@ -187,11 +224,10 @@
             <div class="footer-info">
                 <ul>
                     <li class="h3-size">Contact</li>
-                    <li>Tbilisi, Pekini st. No. 43</li>
-                    <li>+995 558 19 55</li>
-                    <li>Tbilisi, Kostava st. No. 28</li>
-                    <li>+995 258 58 54</li>
-                    <li>BeWell@gmail.com</li>
+                    <li>Tbilisi, Georgia</li>
+                    <li><i class="fa-solid fa-phone"></i>&ensp;+995 558 19 55</li>
+                    <li><i class="fa-solid fa-phone"></i>&ensp;+995 258 58 54</li>
+                    <li><i class="fa-solid fa-envelope"></i>&ensp;BeWell@gmail.com</li>
                 </ul>
                 <ul>
                     <li class="h3-size">Company</li>
@@ -200,31 +236,25 @@
                     <li>Branches</li>
                 </ul>
                 <ul>
-                    <li class="h3-size">Production</li>
-                    <li>Drinks</li>
-                    <li>Protein</li>
-                </ul>
-                <ul>
                     <li class="h3-size">Help</li>
                     <li>Instruction</li>
                     <li>Help Center</li>
                     <li>Problem with the site?</li>
                 </ul>
-            </div>
-            <div class="flex footer-bottom">
-                <p>Terms and Conditions</p>
-                <p>license</p>
-                <p>Privacy Policy</p>
-                <p>2024© All rights reserved</p>
-                <p>Created by SLM</p>
                 <div class="plant-image-drop-N2">
                     <a href="https://www.tbceducation.ge/" target="_blank">
                         <img src="assets/images/tbc-logo.png" alt="TBC">
                     </a>
                 </div>
             </div>
+            <div class="flex footer-bottom">
+                <p>Terms and Conditions</p>
+                <p>Privacy Policy</p>
+                <p>2024© All rights reserved</p>
+                <p>Created by SLM</p>
+            </div>
             <div class="plant-image-drop">
-                <img src="https://static.vecteezy.com/system/resources/previews/010/262/695/non_2x/variegated-grass-pandanus-plant-in-white-round-contemporary-pot-container-isolated-on-transparent-background-for-garden-design-usage-free-png.png"
+                <img src="assets/images/fotar.png"
                     alt="plant">
             </div>
         </div>
@@ -233,6 +263,7 @@
     <script src="js/content.js"></script>
     <script src="js/top.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/navigation.js"></script>
     <script src="https://kit.fontawesome.com/f3bc6e5cae.js" crossorigin="anonymous"></script>
 </body>
 

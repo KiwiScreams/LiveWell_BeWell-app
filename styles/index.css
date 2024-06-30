@@ -7,7 +7,6 @@
     align-items: center;
     text-align: center;
     width: 100%;
-    background-color: #91dc8a;
     overflow: hidden;
 }
 .parallax #parallax-text
@@ -15,8 +14,10 @@
     font-size: 100px;
     color: white;
     margin: 0 auto;
+    left: 36%;
     position: absolute;
-    left: 40%;
+    text-align: center;
+    margin-bottom: 200px;
     text-shadow: 0 0 10px black;
 }
 .parallax img
@@ -32,9 +33,12 @@
 }
 .parallax #img-2
 {
-    height: 200vh;
+    height: 110vh;
 }
-.parallax #img-3,
+.parallax #img-3
+{
+  margin-top: 100px;
+}
 .parallax #img-4 
 {
     height: 100vh;
@@ -50,16 +54,17 @@
 {
     width: 80%;
     margin: 20px auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .text-container .image-container
 {
-    width: 900px;
-    height: 500px;
+    width: 700px;
+    height: 700px;
     overflow: hidden;
 }.text-container .image-container img
 {
     width: 100%;
+    /* height: 100%; */
 }
 .text-container .text-container-box h2
 {
@@ -93,25 +98,17 @@
     border-radius: 0 60px 0 60px;
 }
 /* // */
-
-
-
-
-
-
-
-
-
-
-
-
 .slideshow-container {
     width: 80%;
     position: relative;
     margin: auto;
     height: 550px;
     margin-top: 100px;
+    /* background-color: rgb(174, 250, 174); */
+    background-image: radial-gradient(transparent,rgb(187, 255, 187));
+    padding: 40px 20px;
     margin-bottom: 10px;
+    border-radius: 20px;
   }
   
   .mySlides {
@@ -183,4 +180,59 @@
     transition: 0.5s;
     border-radius: 0 60px 0 60px;
   }
+  .only
+  {
+    /* box-shadow: inset 0 0 100px black; */
+    /* background: linear-gradient(to right, transparent, black); */
+    box-shadow: 0 0 40px 40px #000000b0;
+    background-color: #000000ac;
+  }
+@media only screen and (max-width: 1000px)
+{
+  .parallax #parallax-text
+  {
+    left: 20%;
+  }
+}
+@media only screen and (max-width: 768px)
+{
+  .text-container
+  {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .text-container .text-container-box button
+  {
+    width: 60%;
+  }
+  .text-container .image-container
+  {
+    width: 400px;
+    height: 400px;
+  }
+  .text-container .text-container-box p
+  {
+    width:50%;
+    margin: auto;
+  }
+  .another
+  {
+    flex-direction: column-reverse;
+  }
+  .parallax #parallax-text
+  {
+    width: 80%;
+    margin: 0 auto;
+    left: 12%;
+  }
+  @media screen and (max-width: 500px)
+  {
+    .parallax #parallax-text
+    {
+      font-size: 40px;
+      top: 20%;
+    }
+  }
+}
 /* main end */

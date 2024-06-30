@@ -1,3 +1,10 @@
+/* body
+{
+    background: url(../assets/images/rame.jpg);
+    width: 100%;
+    background-size: 100%;
+    background-position: center;
+} */
 .container
 {
     position: relative;

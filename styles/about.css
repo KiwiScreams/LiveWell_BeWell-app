@@ -27,9 +27,9 @@ h3
 }
 .trainer .best
 {
+    margin-top: -84px;
+    z-index: 11;
     position: absolute;
-    bottom: 10px;
-    left: 10px;
     font-size: 40px;
     font-weight: 900;
     background-color: green;
@@ -63,6 +63,7 @@ h3
     border: none;
     text-align: left;
     outline: none;
+    text-align: center;
     font-size: 22px;
     transition: 0.4s;
     border-radius: 0 60px 0 60px;
@@ -70,13 +71,6 @@ h3
     border-bottom: 3px var(--olive-green-clr) solid;
     border-right: 3px var(--olive-green-clr) solid;
 }
-/* .active, .accordion:hover
-{
-    border-radius: 0 60px 0 60px;
-    background: none;
-    border-bottom: 3px var(--olive-green-clr) solid;
-    border-right: 3px var(--olive-green-clr) solid;
-} */
 .panel
 {
     padding: 0 18px;
@@ -85,4 +79,74 @@ h3
     overflow: hidden;
     width: 70%;
     margin: 20px auto;
+}
+.text-trainer li
+{
+    font-size: 20px;
+}
+.text-trainer ul span 
+{
+    color: green;
+    font-weight: 900;
+}
+.item-container .item .item-image
+{
+    background-color: rgb(0, 0, 0);
+}
+@media only screen and (max-width: 1024px){
+    .trainer {
+        width: 94%;
+    }
+    .trainer .text-trainer {
+        width: 46%;
+    }
+    .footer-container {
+        padding-top: 10px;
+    }
+        .footer-info {
+            width: 60%;
+            margin-left: 34px;
+        }
+            .plant-image-drop {
+                width: 50%;
+            }
+                .footer-bottom {
+                    width: 65%;
+                    margin-left: 34px;
+                    margin-top: 30px;
+                }
+                .trainer .best {
+                   padding: 8px 40px;
+                    font-size: 30px;
+                }
+}
+@media only screen and (max-width: 768px)
+{
+    .trainer
+    {
+        width: 90%;
+        flex-direction: column;
+    }
+    .trainer .text-trainer
+    {
+        width: 100%;
+    }
+    .trainer .trainer-image
+    {
+        width: 100%;
+    }
+    .trainer .best
+    {
+        bottom: 500px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .trainer .trainer-image {
+        margin: 0 auto;
+    }
+    .trainer {
+        width: 94%;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
 }
