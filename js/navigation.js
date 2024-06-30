@@ -7,11 +7,9 @@ window.addEventListener('resize', () => {
   const screenWidth = window.innerWidth;
   if (screenWidth > 730) {
     button.style.display = 'none';
-    console.log("none");
   } else {
     nav.style.display = 'none';
     button.style.display = 'block';
-    console.log("block");
   }
 });
 window.dispatchEvent(new Event('resize'));

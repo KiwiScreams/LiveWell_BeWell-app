@@ -407,7 +407,10 @@ svg {
         padding: 10px 10px;
         font-size: 18px;
     }
-
+    header img
+    {
+        width: 70px;
+    }
     .item-container .item-content {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -485,7 +488,7 @@ svg {
     }
 
     header img {
-        width: 110px;
+        width: 100px;
     }
 
     header ul li {
