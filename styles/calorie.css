@@ -1,52 +1,50 @@
-.calorie-calculator
-{
+.calorie-calculator {
     margin-top: 140px;
 }
-h1
-{
+
+h1 {
     text-align: center;
 }
-.container
-{
+
+.container {
     width: 100%;
     max-width: 1000px;
 }
+
 h1,
 .container,
-.output
-{
+.output {
     margin: 20px auto;
 }
+
 label,
-legend
-{
+legend {
     font-weight: bold;
 }
-.input-container
-{
+
+.input-container {
     display: flex;
     flex-direction: column;
 }
-legend
-{
+
+legend {
     font-size: 30px;
 }
-fieldset
-{
+
+fieldset {
     padding: 20px;
-    background-color: lightgreen;
+    background-color: var(--pale-green-clr);
 }
 button,
 input,
-select
-{
+select {
     min-height: 30px;
     padding: 10px 20px;
     font-size: 28px;
     border-radius: 50px;
 }
-button
-{
+
+button {
     cursor: pointer;
     text-decoration: none;
     background-color: lightgreen;
@@ -55,37 +53,47 @@ button
     font-size: 20px;
     border-radius: 0 60px 0 60px;
 }
-button:hover
-{
+
+button:hover {
     opacity: 0.8;
+}
+input
+{
+    width: 50%;
 }
 fieldset,
 label,
 button,
 input,
-select
-{
+select {
     margin-bottom: 10px;
 }
-.output
-{
+
+.output {
     padding: 10px;
     text-align: center;
 }
-.hide
-{
+
+.hide {
     display: none;
 }
-.output span
-{
+
+.output span {
     font-weight: bold;
     font-size: 1.2em;
 }
-.surplus
-{
+
+.surplus {
     color: pink;
 }
-.deficit
-{
+
+.deficit {
     color: lightgreen;
+}
+
+@media only screen and (max-width: 730px) {
+    .calorie-calculator {
+        margin-top: 40px;
+        padding: 10px;
+    }
 }

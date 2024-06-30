@@ -7,9 +7,9 @@ window.addEventListener('scroll', () =>
 {
     let value = window.scrollY;
     text.style.marginTop = value * 2.5 + 'px';
-    img2.style.top = value * -0.1 + 'px';
-    img3.style.top = value * -0.4 + 'px';
-    img3.style.top = value * -0.8 + 'px';
+    img2.style.top = value * -0.2 + 'px';
+    img3.style.top = value * -0.3 + 'px';
+    img3.style.right = value * -0.4 + 'px';
     img4.style.top = value * 1.5 + 'px';
     img4.style.top = value * 1.5 + 'px';
 })

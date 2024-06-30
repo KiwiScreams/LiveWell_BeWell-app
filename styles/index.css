@@ -1,238 +1,264 @@
 /* INDEX CSS */
 /* main start */
-.parallax
-{
-    position: relative;
-    height: 100vh;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    overflow: hidden;
+.parallax {
+  position: relative;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
 }
-.parallax #parallax-text
-{
-    font-size: 100px;
-    color: white;
-    margin: 0 auto;
-    left: 36%;
-    position: absolute;
-    text-align: center;
-    margin-bottom: 200px;
-    text-shadow: 0 0 10px black;
+
+.parallax #parallax-text {
+  font-size: 100px;
+  color: white;
+  margin: 0 auto;
+  left: 36%;
+  position: absolute;
+  text-align: center;
+  margin-bottom: 200px;
+  text-shadow: 0 0 10px black;
 }
-.parallax img
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
-.parallax #img-1
-{
-    height: 100vh;
+
+.parallax #img-1 {
+  height: 100vh;
 }
-.parallax #img-2
-{
-    height: 110vh;
+
+.parallax #img-2 {
+  height: 110vh;
 }
-.parallax #img-3
-{
+
+.parallax #img-3 {
   margin-top: 100px;
 }
-.parallax #img-4 
-{
-    height: 100vh;
-    margin-top: 50px;
+
+.parallax #img-4 {
+  height: 100vh;
+  margin-top: 50px;
 }
-.parallax svg
-{
-    position: absolute;
-    bottom: 0;
-    left: 0;
+
+.parallax svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
-.text-container
-{
-    width: 80%;
-    margin: 20px auto;
-    margin-bottom: 20px;
+
+.text-container {
+  width: 80%;
+  margin: 20px auto;
+  margin-bottom: 20px;
 }
-.text-container .image-container
-{
-    width: 700px;
-    height: 700px;
-    overflow: hidden;
-}.text-container .image-container img
-{
-    width: 100%;
-    /* height: 100%; */
+
+.text-container .image-container {
+  width: 700px;
+  height: 700px;
+  overflow: hidden;
 }
-.text-container .text-container-box h2
-{
-    font-size: 40px;
-    font-weight: 900;
-    margin-bottom: 30px;
+
+.text-container .image-container img {
+  width: 100%;
+  /* height: 100%; */
 }
-.text-container .text-container-box p
-{
-    font-size: 20px;
-    width: 500px;
-    margin-bottom: 30px;
+
+.text-container .text-container-box h2 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 30px;
 }
-.text-container .text-container-box button
-{
-    width: 80%;
-    transition: 0.5s;
-    font-size: 40px;
-    padding: 10px 30px;
-    border: none;
-    margin-top: 30px;
-    outline: none;
-    background-color: #00000000;
-    border-radius: 60px 0 60px 0;
-    border-bottom: 5px var(--olive-green-clr) solid;
-    border-right: 5px var(--olive-green-clr) solid;
+
+.text-container .text-container-box p {
+  font-size: 20px;
+  width: 100%;
+  margin-bottom: 30px;
 }
-.text-container .text-container-box button:hover
-{
-    transition: 0.5s;
-    border-radius: 0 60px 0 60px;
+
+.text-container .text-container-box button {
+  width: 80%;
+  transition: 0.5s;
+  font-size: 40px;
+  padding: 10px 30px;
+  border: none;
+  margin-top: 30px;
+  outline: none;
+  background-color: #00000000;
+  border-radius: 60px 0 60px 0;
+  border-bottom: 5px var(--olive-green-clr) solid;
+  border-right: 5px var(--olive-green-clr) solid;
 }
+
+.text-container .text-container-box button:hover {
+  transition: 0.5s;
+  border-radius: 0 60px 0 60px;
+}
+
 /* // */
 .slideshow-container {
-    width: 80%;
-    position: relative;
-    margin: auto;
-    height: 550px;
-    margin-top: 100px;
-    /* background-color: rgb(174, 250, 174); */
-    background-image: radial-gradient(transparent,rgb(187, 255, 187));
-    padding: 40px 20px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-  }
-  
-  .mySlides {
-    display: none;
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: green;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  
-  .prev:hover, .next:hover {
-    background-color: rgba(0, 128, 0, 0.137);
-  }
-  
-  .text-slider {
-    color: #000000;
-    font-size: 20px;
-    padding: 10px 20px;
-    width: 50%;
-    z-index: 10;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .image-slider
-  {
-    width: 20%;
-    overflow: hidden;
-    margin: 0 auto;
-    border-radius: 25px;
-  }
-  .image-slider img
-  .slider-image
-  {
-    width: 100%;
-  }
-  button{
-    padding: 10px 30px;
-    font-size: 30px;
-    border: none;
-    margin-top: 30px;
-    outline: none;
-    background-color: #00000000;
-    border-radius: 60px 0 60px 0;
-    border-bottom: 3px var(--olive-green-clr) solid;
-    border-right: 3px var(--olive-green-clr) solid;
-    transition: 0.5s;
-  }
-  button:hover
-  {
-    transition: 0.5s;
-    border-radius: 0 60px 0 60px;
-  }
-  .only
-  {
-    /* box-shadow: inset 0 0 100px black; */
-    /* background: linear-gradient(to right, transparent, black); */
-    box-shadow: 0 0 40px 40px #000000b0;
-    background-color: #000000ac;
-  }
-@media only screen and (max-width: 1000px)
-{
-  .parallax #parallax-text
-  {
+  width: 80%;
+  position: relative;
+  margin: auto;
+  height: 550px;
+  margin-top: 100px;
+  /* background-color: rgb(174, 250, 174); */
+  background-image: radial-gradient(transparent, rgb(187, 255, 187));
+  padding: 40px 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: green;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 128, 0, 0.137);
+}
+
+.text-slider {
+  color: #000000;
+  font-size: 20px;
+  padding: 10px 20px;
+  width: 50%;
+  z-index: 10;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.image-slider {
+  width: 20%;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+
+.image-slider img .slider-image {
+  width: 100%;
+}
+
+button {
+  padding: 10px 30px;
+  font-size: 30px;
+  border: none;
+  margin-top: 30px;
+  outline: none;
+  background-color: #00000000;
+  border-radius: 60px 0 60px 0;
+  border-bottom: 3px var(--olive-green-clr) solid;
+  border-right: 3px var(--olive-green-clr) solid;
+  transition: 0.5s;
+}
+
+button:hover {
+  transition: 0.5s;
+  border-radius: 0 60px 0 60px;
+}
+
+.only {
+  box-shadow: 0 0 40px 40px #000000b0;
+  background-color: #000000ac;
+}
+
+@media only screen and (max-width: 1000px) {
+  .parallax #parallax-text {
     left: 20%;
   }
 }
-@media only screen and (max-width: 768px)
-{
-  .text-container
-  {
+
+@media only screen and (max-width: 1000px) {
+  .text-container {
     width: 100%;
     flex-direction: column;
     text-align: center;
   }
-  .text-container .text-container-box button
-  {
+
+  .text-container .text-container-box button {
     width: 60%;
   }
-  .text-container .image-container
-  {
+
+  .text-container .image-container {
     width: 400px;
     height: 400px;
   }
-  .text-container .text-container-box p
-  {
-    width:50%;
+
+  .text-container .text-container-box p {
+    width: 90%;
     margin: auto;
   }
-  .another
-  {
+
+  .another {
     flex-direction: column-reverse;
   }
-  .parallax #parallax-text
-  {
+
+  .parallax #parallax-text {
     width: 80%;
     margin: 0 auto;
     left: 12%;
   }
-  @media screen and (max-width: 500px)
-  {
-    .parallax #parallax-text
-    {
+
+  .parallax #img-2 {
+    height: 100vh;
+    margin-top: 50px;
+  }
+
+  .parallax #img-3 {
+    margin-top: 216px;
+
+  }
+
+  .only {
+    background-color: #ffffff;
+  }
+}
+  @media screen and (max-width:520px) {
+    .text-slider {
+      font-size: 18px;
+      padding: 10px 0px;
+      width: 100%;
+    }
+    
+    .slideshow-container {
+      width: 90%;
+      height: 424px;
+      margin-top: 100px;
+      padding: 14px 6px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .parallax #parallax-text {
       font-size: 40px;
       top: 20%;
     }
+
   }
-}
-/* main end */
